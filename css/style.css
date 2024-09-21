@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,7 +21,7 @@ a {
 }
 
 header {
-    padding: 30px 90px;
+    padding: 30px 200px;
     background-color: #111;
 }
 
@@ -45,7 +46,7 @@ header {
 }
 
 #area1 {
-    padding: 70px 90px;
+    padding: 70px 200px;
     background-color: #131313;
     display: flex;
 }
@@ -79,7 +80,7 @@ header {
 }
 
 #projects-area {
-    padding: 70px 90px;
+    padding: 70px 200px;
     background-color: #151515;
 }
 
@@ -97,20 +98,18 @@ header {
 
 #projects-area .projects-cards {
     margin-top: 60px;
-    display: flex;
-    gap: 33px;
     overflow: hidden;
-    padding: 0px 30px;
 }
 
 .project-box {
+    position: relative;
     border-radius: 16px;
     background-color: #0F0F0F;
     border: 1px solid rgba(112, 0, 255, 0.5);
     display: flex;
     flex-direction: column;
     min-height: 500px;
-    max-height: 500px;
+    max-width: 350px;
 }
 
 .project-content {
@@ -138,11 +137,57 @@ header {
 }
 
 .project-box .project-tags {
-    margin-left: 15px;
-    margin-top: auto;
-    margin-bottom: 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
     display: flex;
     gap: 10px;
+}
+
+footer {
+    background-color: #111111;
+    padding: 90px 200px;
+    display: flex;
+}
+
+footer .left-side {
+    flex: 1
+}
+
+footer .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+footer .contact-text h5 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+footer .contact-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer .social-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+footer .discord-contact,
+footer .email-contact {
+    display: flex;
+    align-items: center;
+}
+
+footer .discord-contact span,
+footer .email-contact span {
+    margin-left: 20px;
 }
 
 .purple-text {

@@ -84,6 +84,10 @@ header {
     background-color: #151515;
 }
 
+#projects-area .projects-text {
+    text-align: center;
+}
+
 #projects-area .projects-text h5 {
     font-size: 20px;
     font-weight: 200;
@@ -99,6 +103,18 @@ header {
 #projects-area .projects-cards {
     margin-top: 60px;
     overflow: hidden;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+}
+
+#projects-area .projects-full-cards {
+    margin-top: 60px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 30px;
+    place-items: center;
 }
 
 .project-box {
@@ -144,9 +160,22 @@ header {
     gap: 10px;
 }
 
+.projects-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.projects-btn a {
+    width: 20%;
+    padding: 18px 0px;
+    box-shadow: 1px 1px 50px #0000009c;
+    font-size: 20px;
+}
+
 footer {
     background-color: #111111;
-    padding: 90px 200px;
+    padding: 50px 200px;
     display: flex;
 }
 
@@ -199,7 +228,8 @@ footer .email-contact span {
     font-weight: bold;
     border-radius: 8px;
     text-align: center;
-    padding: 13px 20px;
+    padding: 15px 25px;
+    font-size: 16px;
     outline: 0;
     border: 0;
     color: #F2F2F2;
@@ -210,7 +240,8 @@ footer .email-contact span {
     font-weight: bold;
     border-radius: 8px;
     text-align: center;
-    padding: 13px 20px;
+    padding: 15px 25px;
+    font-size: 16px;
     outline: 0;
     border: 1px solid #7000FF;
     color: #F2F2F2;

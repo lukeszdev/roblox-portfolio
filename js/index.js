@@ -21,10 +21,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     gsap.fromTo(".introduction-rectangle", {
         opacity: 0,
+        x: 10
     }, {
+        x: 0,
         opacity: 1,
         duration: 1,
-        delay: introTween._end / 1.2
+        delay: introTween._end
     })
 
     gsap.fromTo(".projects-text", {

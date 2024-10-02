@@ -37,6 +37,14 @@ header {
     font-weight: bold;
 }
 
+#header-content #logo a {
+    transition: all .2s;
+}
+
+#header-content #logo a:hover {
+    opacity: 0.8;
+}
+
 #header-content nav {
     flex: 1;
     display: flex;
@@ -44,6 +52,14 @@ header {
     gap: 24px;
     font-size: 25px;
     font-weight: 200;
+}
+
+#header-content nav a {
+    transition: all .2s;
+}
+
+#header-content nav a:hover {
+    opacity: 0.8;
 }
 
 #area1 {
@@ -105,7 +121,6 @@ header {
 
 #projects-area .projects-cards {
     margin-top: 60px;
-    overflow: hidden;
     justify-content: center;
     gap: 30px;
     display: flex;
@@ -113,7 +128,6 @@ header {
 
 #projects-area .projects-full-cards {
     margin-top: 60px;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     gap: 30px;
@@ -129,6 +143,16 @@ header {
     flex-direction: column;
     min-height: 500px;
     max-width: 350px;
+}
+
+.box-wrapper {
+    transition: all .5s;
+}
+
+.box-wrapper:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 80px #000000b2;
 }
 
 .project-content {
@@ -236,6 +260,8 @@ footer .email-contact span {
     outline: 0;
     border: 0;
     color: #F2F2F2;
+    border: 1px solid #7000FF;
+    transition: all .5s;
 }
 
 .outline-btn {
@@ -248,6 +274,14 @@ footer .email-contact span {
     outline: 0;
     border: 1px solid #7000FF;
     color: #F2F2F2;
+    transition: all .5s;
+}
+
+.fill-btn:hover,
+.outline-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 40px #000000a6;
+    transform: translateY(-7px);
 }
 
 .script-tag {

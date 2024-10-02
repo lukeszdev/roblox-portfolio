@@ -63,9 +63,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         y: 0,
         scrollTrigger: {
             trigger: ".projects-btn",
-            scrub: 3,
-            markers: true,
-            start: "top 850px",
+            scrub: 2,
+            start: "top 900px",
             end: "bottom 1100px"
         }
     })

@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.fromTo(".introduction-illustration", {
-        x: 700,
+        x: 500,
         opacity: 0,
     }, {
         x: 0,
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
 
     let introTween = gsap.fromTo(".myself-introduction", {
-        x: -700,
+        x: -500,
         opacity: 0,
     }, {
         x: 0,

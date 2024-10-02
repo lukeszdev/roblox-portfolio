@@ -13,6 +13,7 @@ body {
     font-weight: 200;
     line-height: 28px;
     color: #F2F2F2;
+    overflow-x: hidden;
 }
 
 a {
@@ -49,6 +50,7 @@ header {
     padding: 70px 200px;
     background-color: #131313;
     display: flex;
+    min-height: 100vh;
 }
 
 #area1 .myself-introduction {
@@ -60,6 +62,7 @@ header {
 #area1 img.introduction-illustration {
     flex: 1;
     max-width: 800px;
+    max-height: 600px;
 }
 
 #area1 .myself-introduction h1 {
@@ -169,7 +172,7 @@ header {
 .projects-btn a {
     width: 20%;
     padding: 18px 0px;
-    box-shadow: 1px 1px 50px #0000009c;
+    box-shadow: 1px 1px 50px #000000b2;
     font-size: 20px;
 }
 

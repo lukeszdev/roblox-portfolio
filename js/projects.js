@@ -27,7 +27,6 @@ const projects = [
 
 function generateProjectBoxes() {
     const container = document.querySelector('.projects-full-cards');
-
     projects.forEach(project => {
         const projectBox = document.createElement('div');
         projectBox.className = 'project-box';
@@ -49,4 +48,6 @@ function generateProjectBoxes() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', generateProjectBoxes);
+document.addEventListener('DOMContentLoaded', (event) => {
+    generateProjectBoxes()
+});

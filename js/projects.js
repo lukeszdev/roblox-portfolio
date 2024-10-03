@@ -89,6 +89,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     gsap.registerPlugin(ScrollTrigger)
 
+    gsap.fromTo("header", {
+        y: -100,
+        opacity: 0
+    }, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 0.1
+    })
+
     gsap.fromTo(".projects-text", {
         opacity: 0,
         y: -50,
@@ -106,4 +116,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         y: 0,
         duration: 1
     })
+});
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+        header.classList.add('header-fixed');
+    } else {
+        header.classList.remove('header-fixed');
+    }
 });

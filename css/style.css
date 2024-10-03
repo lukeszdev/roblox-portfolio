@@ -144,9 +144,10 @@ header {
 #projects-area .projects-full-cards {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 370px 370px 370px;
     gap: 30px;
     place-items: center;
+    place-content: center;
 }
 
 .project-box {
@@ -345,5 +346,9 @@ footer .email-contact span {
 
     #area1 .intro-illustration {
         display: none;
+    }
+
+    #projects-area .projects-full-cards {
+        grid-template-columns: 370px 370px;
     }
 }

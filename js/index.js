@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.fromTo(".introduction-illustration", {
+    gsap.fromTo(".intro-illustration", {
         x: 500,
         opacity: 0,
     }, {

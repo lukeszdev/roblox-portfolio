@@ -2,7 +2,7 @@ header {
     padding: 30px 30px;
 }
 
-#area1 img.introduction-illustration {
+#area1 .intro-illustration {
     display: none;
 }
 

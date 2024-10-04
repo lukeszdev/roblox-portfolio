@@ -21,6 +21,10 @@ a {
     color: #F2F2F2;
 }
 
+ul {
+    list-style: none;
+}
+
 header {
     position: absolute;
     padding: 30px 100px;
@@ -47,13 +51,17 @@ header {
     opacity: 0.8;
 }
 
-#header-content nav {
+#header-content .nav-list {
     flex-grow: 1;
-    display: flex;
     justify-content: right;
+    display: flex;
     gap: 24px;
     font-size: 25px;
     font-weight: 200;
+}
+
+nav .nav-list-mobile {
+    display: none;
 }
 
 #header-content nav a {
@@ -182,9 +190,10 @@ header {
 }
 
 .project-content .thumb img {
-    width: 100%;
-    max-width: 400px;
-    max-height: 250px;
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .project-content .project-title {
@@ -326,8 +335,12 @@ footer .email-contact span {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 100;
     background-color: #111111c0;
+}
+
+#mobile-menu {
+    display: none;
 }
 
 @media (max-width: 1300px) and (min-width: 1024px) {

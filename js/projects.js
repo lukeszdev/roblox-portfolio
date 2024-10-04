@@ -55,6 +55,13 @@ const projects = [
         tags: ["#script", "#uidesign"],
         href: "https://www.youtube.com/watch?v=_1eLy3oX6T8"
     },
+    {
+        title: "Tree Farm System",
+        description: "When the player breaks a tree he will receive a certain amount of wood, being able to sell this wood for money.",
+        image: "assets/images/projects-thumb/treefarmsystem.png",
+        tags: ["#script", "#vfx"],
+        href: "https://www.youtube.com/watch?v=e63YjIgBPRY"
+    },
 ]
 
 function generateProjectBoxes() {
@@ -84,8 +91,20 @@ function generateProjectBoxes() {
     });
 }
 
+function initMobileMenu() {
+    const mobileMenu = document.querySelector("#mobile-menu")
+    const navList = document.querySelector(".nav-list-mobile")
+
+    const activeClass = "active"
+
+    mobileMenu.addEventListener("click", () => {
+        navList.classList.toggle(activeClass)
+    })
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     generateProjectBoxes()
+    initMobileMenu()
 
     gsap.registerPlugin(ScrollTrigger)
 

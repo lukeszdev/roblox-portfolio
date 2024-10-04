@@ -1,4 +1,69 @@
+const featuredProjects = [
+    {
+        title: "Lobby System",
+        description: "Lobby system for a betting game, where a specific number of players join to start a timer and begin the match.",
+        image: "assets/images/projects-thumb/lobbythumb.png",
+        tags: ["#script", "#uidesign"],
+        href: "https://www.youtube.com/watch?v=DZXp5t8t7V8"
+    },
+    {
+        title: "Creature AI",
+        description: "Creature AI for an RPG game, featuring a simple combat system (with combos).",
+        image: "assets/images/projects-thumb/creatureaithumb.png",
+        tags: ["#script", "#uidesign", "#vfx", "#animation"],
+        href: "https://www.youtube.com/watch?v=6ZU3mlysSuQ&t"
+    },
+    {
+        title: "Tutorial System",
+        description: "A tutorial system with an arrow indicating a place for you to go and a list of objectives.",
+        image: "assets/images/projects-thumb/tutorialsystem.png",
+        tags: ["#script", "#uidesign"],
+        href: "https://www.youtube.com/watch?v=7rhwD4Wwv5A"
+    }
+]
+
+function generateProjectBoxes() {
+    const container = document.querySelector('.projects-cards');
+    featuredProjects.forEach(project => {
+        const boxWrapper = document.createElement('a');
+        boxWrapper.className = 'box-wrapper';
+        boxWrapper.href = project.href;
+        boxWrapper.target = "_blank"
+
+        boxWrapper.innerHTML = `
+        <div class="project-box">
+            <div class="project-content">
+                <div class="thumb">
+                    <img src="${project.image}" alt="${project.title}">
+                </div>
+                <h1 class="project-title">${project.title}</h1>
+                <p class="project-description">${project.description}</p>
+            </div>
+            <div class="project-tags">
+                ${project.tags.map(tag => `<span class="${tag.replace('#', '')}-tag">${tag}</span>`).join('')}
+            </div>
+        </div>
+        `;
+
+        container.appendChild(boxWrapper);
+    });
+}
+
+function initMobileMenu() {
+    const mobileMenu = document.querySelector("#mobile-menu")
+    const navList = document.querySelector(".nav-list-mobile")
+
+    const activeClass = "active"
+
+    mobileMenu.addEventListener("click", () => {
+        navList.classList.toggle(activeClass)
+    })
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
+    generateProjectBoxes()
+    initMobileMenu()
+
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.fromTo("header", {

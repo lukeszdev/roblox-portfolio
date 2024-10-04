@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)">
     <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 601px) and (max-width: 1023px)">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>lukesz | Roblox Developer</title>
 </head>
 
@@ -17,9 +18,23 @@
                 <a href="/">lukesz</a>
             </div>
             <nav>
-                <a href="/">About</a>
-                <a href="projects.html">Projects</a>
-                <a href="#contact-area">Contact</a>
+                <div id="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="nav-list-mobile">
+                    <li><a href="/">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#contact-area">Contact</a></li>
+                </ul>
+
+                <ul class="nav-list">
+                    <li><a href="/">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#contact-area">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -52,66 +67,7 @@
             </p>
         </div>
         <div class="projects-cards">
-            <a class="box-wrapper" href="#">
-                <div class="project-box">
-                    <div class="project-content">
-                        <div class="thumb">
-                            <img src="assets/images/projects-thumb/lobbythumb.png">
-                        </div>
-                        <h1 class="project-title">Lobby System</h1>
-                        <p class="project-description">
-                            Lobby system for a betting game, where a specific
-                            number of players join to start atimer and beginthe match.
-                        </p>
-                    </div>
-                    <div class="project-tags">
-                        <span class="script-tag">#script</span>
-                        <span class="uidesign-tag">#uidesign</span>
-                    </div>
-                </div>
-            </a>
-
-            <a class="box-wrapper" href="#">
-                <div class="project-box">
-                    <div class="project-content">
-                        <div class="thumb">
-                            <img src="assets/images/projects-thumb/creatureaithumb.png">
-                        </div>
-                        <h1 class="project-title">Creature AI</h1>
-                        <p class="project-description">
-                            Creature AI for an RPG game,
-                            featuring a simple combat system
-                            (with combos).
-                        </p>
-                    </div>
-                    <div class="project-tags">
-                        <span class="script-tag">#script</span>
-                        <span class="uidesign-tag">#uidesign</span>
-                        <span class="vfx-tag">#vfx</span>
-                        <span class="animation-tag">#animation</span>
-                    </div>
-                </div>
-            </a>
-
-            <a class="box-wrapper" href="#">
-                <div class="project-box">
-                    <div class="project-content">
-                        <div class="thumb">
-                            <img src="assets/images/projects-thumb/tutorialsystem.png">
-                        </div>
-                        <h1 class="project-title">Tutorial System</h1>
-                        <p class="project-description">
-                            A tutorial system with an arrow
-                            indicating a place for you to go
-                            and a list of objectives
-                        </p>
-                    </div>
-                    <div class="project-tags">
-                        <span class="script-tag">#script</span>
-                        <span class="uidesign-tag">#uidesign</span>
-                    </div>
-                </div>
-            </a>
+            <!-- Generate by JS -->
         </div>
         <div class="projects-btn">
             <a href="projects.html" class="fill-btn">See all projects</a>

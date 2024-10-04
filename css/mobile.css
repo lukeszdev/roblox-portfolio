@@ -6,7 +6,7 @@ header {
     flex-grow: 1;
 }
 
-#header-content nav {
+#header-content .nav-list {
     display: none;
 }
 
@@ -63,4 +63,46 @@ footer .right-side {
 
 #projects-area .projects-full-cards {
     grid-template-columns: 370px;
+}
+
+#mobile-menu {
+    display: block;
+    cursor: pointer;
+}
+
+#mobile-menu div {
+    width: 32px;
+    height: 2.5px;
+    background-color: #F2F2F2;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+nav .nav-list {
+    display: none;
+}
+
+nav .nav-list-mobile {
+    display: flex;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: #111111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform .5s;
+}
+
+nav .nav-list-mobile li {
+    letter-spacing: 3px;
+}
+
+nav .nav-list-mobile.active {
+    transform: translateX(0);
+    opacity: 1;
 }

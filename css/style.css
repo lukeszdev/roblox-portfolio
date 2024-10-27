@@ -267,12 +267,23 @@ footer .social-contact {
 }
 
 footer .discord-contact,
+footer .twitter-contact,
 footer .email-contact {
     display: flex;
     align-items: center;
 }
 
+footer .twitter-contact a {
+    transition: all .3s;
+}
+
+footer .twitter-contact a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 footer .discord-contact span,
+footer .twitter-contact span,
 footer .email-contact span {
     margin-left: 20px;
 }

@@ -14,6 +14,13 @@ const projects = [
         href: "https://www.youtube.com/watch?v=6ZU3mlysSuQ&t"
     },
     {
+        title: "Line Simulator UI",
+        description: "Complete UI for a line simulator game",
+        image: "assets/images/projects-thumb/linesimulatorui.png",
+        tags: ["#uidesign"],
+        href: "https://x.com/lukeszdev/status/1852805058574033383"
+    },
+    {
         title: "Tutorial System",
         description: "A tutorial system with an arrow indicating a place for you to go and a list of objectives.",
         image: "assets/images/projects-thumb/tutorialsystem.png",

@@ -1,5 +1,12 @@
 const featuredProjects = [
     {
+        title: "Line Simulator Game",
+        description: "Full Line Simulator Game that I did for a commission. All scripts and UI were made by me",
+        image: "assets/images/projects-thumb/linesimulatorthumb.png",
+        tags: ["#script", "#uidesign"],
+        href: "https://www.youtube.com/watch?v=H01Oji6RSmU"
+    },
+    {
         title: "Lobby System",
         description: "Lobby system for a betting game, where a specific number of players join to start a timer and begin the match.",
         image: "assets/images/projects-thumb/lobbythumb.png",
@@ -12,13 +19,6 @@ const featuredProjects = [
         image: "assets/images/projects-thumb/creatureaithumb.png",
         tags: ["#script", "#uidesign", "#vfx", "#animation"],
         href: "https://www.youtube.com/watch?v=6ZU3mlysSuQ&t"
-    },
-    {
-        title: "Line Simulator UI",
-        description: "Complete UI for a line simulator game",
-        image: "assets/images/projects-thumb/linesimulatorui.png",
-        tags: ["#uidesign"],
-        href: "https://x.com/lukeszdev/status/1852805058574033383"
     }
 ]
 

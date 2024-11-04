@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "Line Simulator Game",
+        description: "Full Line Simulator Game that I did for a commission. All scripts and UI were made by me",
+        image: "assets/images/projects-thumb/linesimulatorthumb.png",
+        tags: ["#script", "#uidesign"],
+        href: "https://www.youtube.com/watch?v=H01Oji6RSmU"
+    },
+    {
         title: "Lobby System",
         description: "Lobby system for a betting game, where a specific number of players join to start a timer and begin the match.",
         image: "assets/images/projects-thumb/lobbythumb.png",

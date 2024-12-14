@@ -4,21 +4,21 @@ const featuredProjects = [
         description: "Full Line Simulator Game that I did for a commission. All scripts and UI were made by me",
         image: "assets/images/projects-thumb/linesimulatorthumb.png",
         tags: ["#script", "#uidesign"],
-        href: "https://www.youtube.com/watch?v=H01Oji6RSmU"
+        href: "https://streamable.com/df83gw"
     },
     {
         title: "Lobby System",
         description: "Lobby system for a betting game, where a specific number of players join to start a timer and begin the match.",
         image: "assets/images/projects-thumb/lobbythumb.png",
         tags: ["#script", "#uidesign"],
-        href: "https://www.youtube.com/watch?v=DZXp5t8t7V8"
+        href: "https://streamable.com/l44xbx"
     },
     {
         title: "Creature AI",
         description: "Creature AI for an RPG game, featuring a simple combat system (with combos).",
         image: "assets/images/projects-thumb/creatureaithumb.png",
         tags: ["#script", "#uidesign", "#vfx", "#animation"],
-        href: "https://www.youtube.com/watch?v=6ZU3mlysSuQ&t"
+        href: "https://streamable.com/a9a4ap"
     }
 ]
 

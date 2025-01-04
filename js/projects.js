@@ -71,7 +71,7 @@ const projects = [
     },
 ]
 
-function generateProjectBoxes() {//
+function generateProjectBoxes() {
     const container = document.querySelector('.projects-full-cards');
     projects.forEach(project => {
         const boxWrapper = document.createElement('a');

@@ -7,6 +7,13 @@ const projects = [
         href: "https://streamable.com/df83gw"
     },
     {
+        title: "Snake Game",
+        description: "Full Snake Game that I did for a commission. All scripts were made by me.",
+        image: "assets/images/projects-thumb/snakegamethumb.png",
+        tags: ["#script"],
+        href: "https://x.com/lukeszdev/status/1869221592909373479"
+    },
+    {
         title: "Lobby System",
         description: "Lobby system for a betting game, where a specific number of players join to start a timer and begin the match.",
         image: "assets/images/projects-thumb/lobbythumb.png",
